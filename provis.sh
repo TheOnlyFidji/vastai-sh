@@ -40,7 +40,7 @@ CHECKPOINT_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/api/download/models/16576"
+    #"https://civitai.com/api/download/models/16576"
     "https://civitai.com/api/download/models/542319"
 )
 
@@ -211,7 +211,7 @@ function provisioning_download() {
         auth_token="$CIVITAI_TOKEN"
     fi
     if [[ -n $auth_token ]];then
-        wget --header="Authorization: Bearer $auth_token" -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1?token=ae1185c12cd690799d28c3043b7ad936"
     else
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
