@@ -29,6 +29,7 @@ EXTENSIONS=(
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     "https://github.com/Gourieff/sd-webui-reactor"
     "https://github.com/Bing-su/adetailer"
+    "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111"
 )
 
 CHECKPOINT_MODELS=(
